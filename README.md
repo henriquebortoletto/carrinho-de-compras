@@ -15,7 +15,7 @@
 
 ### Pojeto Carrinho de Compras
 
-Desenvolver uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia, com as seguintes funcionalidades:
+Aplicação de gerenciamento de um carrinho de compras, simulando experiência de e-commerce, com as seguintes funcionalidades:
 
 - [x] Listagem de produtos (cafés) disponíveis para compra;
 - [x] Aumentar ou remover a quantidade de itens no carrinho;
