@@ -3,7 +3,7 @@ import { DefaultTheme } from "styled-components/dist/types";
 
 import { ButtonProps } from ".";
 
-const wrapperModifiers = {
+const styleModifiers = {
   primary: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.weight.bold};
@@ -63,9 +63,9 @@ export const Button = styled(ButtonShared)<ButtonProps>`
       color: ${theme.colors.purple[500]};
     }
 
-    ${$size && wrapperModifiers[$size]()}
-    ${$fullWidth && wrapperModifiers.fullWidth()}
-    ${$primary && wrapperModifiers.primary(theme)}
-    ${!$primary && wrapperModifiers.default(theme)}
+    ${$size && styleModifiers[$size]()}
+    ${$fullWidth && styleModifiers.fullWidth()}
+    ${$primary && styleModifiers.primary(theme)}
+    ${!$primary && styleModifiers.default(theme)}
   `}
 `;

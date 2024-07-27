@@ -5,11 +5,11 @@ interface IconProps {
   $color: string;
 }
 
-interface WrapperModifiersProps {
+interface styleModifiersProps {
   [key: string]: (theme: DefaultTheme) => ReturnType<typeof css>;
 }
 
-const wrapperModifiers: WrapperModifiersProps = {
+const styleModifiers: styleModifiersProps = {
   purple: (theme: DefaultTheme) => css`
     background-color: ${theme.colors.purple[500]};
   `,
@@ -97,7 +97,7 @@ export const Icon = styled.div<IconProps>`
   ${({ theme, $color }) => css`
     color: ${theme.colors.white};
 
-    ${$color && wrapperModifiers[$color](theme)}
+    ${$color && styleModifiers[$color](theme)}
   `}
 `;
 
