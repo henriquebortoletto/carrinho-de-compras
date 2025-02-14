@@ -38,7 +38,7 @@ export function cartReducer(state: Cart, action: ActionsTypesProps) {
       }
 
       return produce(state, (draft) => {
-        draft.cart[productHasInCartIndex].quantity +=
+        draft.cart[productHasInCartIndex].quantity =
           action.payload.product.quantity;
       });
 
