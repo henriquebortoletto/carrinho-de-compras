@@ -1,7 +1,3 @@
-<h2 align="center">
-  <img alt="Capa do projeto" src="./.github/cover.png" width="280px" />
-</h2>
-
 <p align="center">
   <a href="mailto:bortolettohenrique@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/gmail-red?style=flat&logo=gmail&labelColor=white">
